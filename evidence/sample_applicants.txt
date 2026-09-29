@@ -1,0 +1,32 @@
+======================================================================
+A: stable homeowner, small loan
+  Probability of default: 2.1%
+  Model band: Likely eligible  |  Final result: Likely eligible
+     Annual income                            -1.30
+     Loan purpose                             -0.33
+     Home ownership                           -0.28
+     Previous default on record               -0.25
+     Age                                      -0.22
+======================================================================
+B: young renter, moderate loan
+  Probability of default: 8.3%
+  Model band: Needs further review  |  Final result: Needs further review
+     Loan-to-income ratio                     -0.56
+     Annual income                            -0.35
+     Previous default on record               -0.34
+     Home ownership                           +0.30
+     Loan amount requested                    -0.18
+======================================================================
+C: renter, past default, heavy burden
+  Probability of default: 99.0%
+  Model band: Unlikely at this time  |  Final result: Unlikely at this time
+  Policy rule: Requested loan is more than 50% of annual income.
+  Policy rule: Previous default on record combined with a loan above 30% of income.
+     Loan-to-income ratio                     +3.21
+     Home ownership                           +1.45
+     Previous default on record               +0.48
+     Loan amount requested                    +0.38
+     Annual income                            +0.32
+======================================================================
+D: invalid input
+  Rejected at validation: ['Age must be between 18 and 100 (got 144).']

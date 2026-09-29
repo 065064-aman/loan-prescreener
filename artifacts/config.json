@@ -1,0 +1,80 @@
+{
+  "model_name": "XGBoost",
+  "version": "1.0",
+  "author": "Aman Aggarwal (065064)",
+  "currency": "USD (demonstration dataset)",
+  "t_low": 0.0828,
+  "t_high": 0.4187,
+  "bands": [
+    "Likely eligible",
+    "Needs further review",
+    "Unlikely at this time"
+  ],
+  "training_ranges": {
+    "person_age": [
+      21.0,
+      64.56
+    ],
+    "person_income": [
+      8829.59,
+      648000.0
+    ],
+    "person_emp_length": [
+      0.0,
+      24.0
+    ],
+    "cb_person_cred_hist_length": [
+      2.0,
+      29.0
+    ]
+  },
+  "hard_limits": {
+    "person_age": [
+      18,
+      100
+    ],
+    "person_income": [
+      1000,
+      10000000
+    ],
+    "person_emp_length": [
+      0,
+      60
+    ],
+    "loan_amnt": [
+      500,
+      35000
+    ],
+    "cb_person_cred_hist_length": [
+      0,
+      60
+    ]
+  },
+  "categories": {
+    "person_home_ownership": [
+      "RENT",
+      "MORTGAGE",
+      "OWN",
+      "OTHER"
+    ],
+    "loan_intent": [
+      "EDUCATION",
+      "MEDICAL",
+      "VENTURE",
+      "PERSONAL",
+      "DEBTCONSOLIDATION",
+      "HOMEIMPROVEMENT"
+    ],
+    "cb_person_default_on_file": [
+      "N",
+      "Y"
+    ]
+  },
+  "test_metrics": {
+    "ROC-AUC": 0.9055,
+    "PR-AUC": 0.8186,
+    "Recall": 0.7504,
+    "Precision": 0.6528
+  },
+  "base_default_rate": 0.2187
+}
